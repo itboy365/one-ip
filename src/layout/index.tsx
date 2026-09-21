@@ -148,9 +148,9 @@ export function AppLayout() {
           </Tabs.Content>
         </AnimatedSegmentedTabs>
         <footer className="app-footer">
-          © {new Date().getFullYear()} IP ·{" "}
+          © {new Date().getFullYear()} &nbsp;|&nbsp;{" "}
           <UnderlineHover asChild>
-            <Link to="/docs/api">API</Link>
+            <Link to="/docs/api">API 文档</Link>
           </UnderlineHover>
         </footer>
       </div>
