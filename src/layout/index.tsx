@@ -8,7 +8,6 @@ import { ThemeToggleButton } from "@/components/theme/theme-toggle-button";
 import { Pending } from "@/components/toolkit";
 import { AnimatedSegmentedTabs } from "@/components/ui/animated-segmented-tabs";
 import { ScrollArea, ScrollBar } from "@/components/ui/scroll-area";
-import { UnderlineHover } from "@/components/underline-hover";
 import { useIsMobile } from "@/hooks/use-mobile";
 import { useTheme } from "@/hooks/use-theme";
 import { t } from "@/i18n";
@@ -147,12 +146,6 @@ export function AppLayout() {
             </main>
           </Tabs.Content>
         </AnimatedSegmentedTabs>
-        <footer className="app-footer">
-          © {new Date().getFullYear()} &nbsp;|&nbsp;{" "}
-          <UnderlineHover asChild>
-            <Link to="/docs/api">API 文档</Link>
-          </UnderlineHover>
-        </footer>
       </div>
       <aside aria-label={t("站点通知")} className="update-notices">
         <AppUpdateChecker />
